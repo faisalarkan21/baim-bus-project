@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    </head>
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="">
+                        <!--<a href="index.html" class="logo text-center">Admiria</a>-->
+                        <a href="index.html" class="logo" ><img src="assets/images/logo-sm.png" height="56" alt="logo" style="margin-left: 65px;"></a>
+                    </div>
+                </div>
+
+                <div class="sidebar-inner slimscrollleft">
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Main</li>
+                            <li class="has_sub">
+                                <a routerLink="/" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard <span class="badge badge-pill badge-primary pull-right">20+</span></span> </a>
+                            </li>
+                            <li>
+                                <a routerLink="/agency" class="waves-effect"><i class="mdi mdi-cube-outline"></i><span> Agency </span></a>
+                            </li>
+                            <li class="has_sub">
+                                <a routerLink="/bus" class="waves-effect"><i class="mdi mdi-bus"></i><span> Bus </span></a>
+                            </li>
+                            <li>
+                                <a routerLink="/trips" class="waves-effect"><i class="mdi mdi-road-variant"></i><span> Trips </span></a>
+                            </li>
+                            <li>
+                                <a routerLink="/profile"  class="waves-effect"><i class="mdi mdi-account-circle"></i><span> Profile </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> <!-- end sidebarinner -->
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- Start right Content here -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+
+                    <!-- Top Bar Start -->
+                    <div class="topbar">
+
+                        <nav class="navbar-custom">
+                            <!-- Search input -->
+                            <div class="search-wrap" id="search-wrap">
+                                <div class="search-bar">
+                                    <input class="search-input" type="search" placeholder="Search" />
+                                    <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                                        <i class="mdi mdi-close-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="list-inline float-right mb-0">
+                                <!-- Search -->
+                                <li class="list-inline-item dropdown notification-list">
+                                    <a class="nav-link waves-effect toggle-search" href="#"  data-target="#search-wrap">
+                                        <i class="mdi mdi-magnify noti-icon"></i>
+                                    </a>
+                                </li>
+                                <!-- Fullscreen -->
+                                <!-- <li class="list-inline-item dropdown notification-list hidden-xs-down">
+                                    <a class="nav-link waves-effect" href="#" id="btn-fullscreen">
+                                        <i class="mdi mdi-fullscreen noti-icon"></i>
+                                    </a>
+                                </li> -->
+                                <!-- notification-->
+                                <!-- <li class="list-inline-item dropdown notification-list">
+                                    <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="false" aria-expanded="false">
+                                        <i class="ion-ios7-bell noti-icon"></i>
+                                        <span class="badge badge-danger noti-icon-badge">3</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg"> -->
+                                        <!-- item-->
+                                        <!-- <div class="dropdown-item noti-title">
+                                            <h5>Notification (3)</h5>
+                                        </div> -->
+
+                                        <!-- item-->
+                                        <!-- <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                            <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                            <p class="notify-details"><b>Your order is placed</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                        </a> -->
+
+                                        <!-- item-->
+                                        <!-- <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                            <p class="notify-details"><b>New Message received</b><small class="text-muted">You have 87 unread messages</small></p>
+                                        </a> -->
+
+                                        <!-- item-->
+                                        <!-- <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-info"><i class="mdi mdi-martini"></i></div>
+                                            <p class="notify-details"><b>Your item is shipped</b><small class="text-muted">It is a long established fact that a reader will</small></p>
+                                        </a> -->
+
+                                        <!-- All-->
+                                        <!-- <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            View All
+                                        </a> -->
+
+                                    <!-- </div>
+                                </li> -->
+                                |
+                                <!-- User-->
+                                <li class="list-inline-item dropdown notification-list">
+                                    <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="false" aria-expanded="false">
+                                       <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{userData.name}}</span> 
+                                       <img src="../../assets/images/logo_login.jpg" alt="user" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                        <a class="dropdown-item" routerLink="/profile"><i class="dripicons-user text-muted"></i> Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted"></i> Lock screen</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" (click)="doLogout()"><i class="dripicons-exit text-muted"></i> Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Page title -->
+                            <ul class="list-inline menu-left mb-0">
+                                <li class="list-inline-item">
+                                    <button type="button" class="button-menu-mobile open-left waves-effect">
+                                        <i class="ion-navicon"></i>
+                                    </button>
+                                </li>
+                                <li class="hide-phone list-inline-item app-search">
+                                    <h3 class="page-title">Dashboard</h3>
+                                </li>
+                            </ul>
+
+                            <div class="clearfix"></div>
+                        </nav>
+
+                    </div>
+                    <!-- Top Bar End -->
+
+                    <!-- ==================
+                         PAGE CONTENT START
+                         ================== -->
+
+                    <div class="page-content-wrapper">
+
+                        <router-outlet></router-outlet>
+
+                    </div> <!-- Page content Wrapper -->
+
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    ©Copyright 2020 <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-new-box text-dark"></i> by Baim&Lia</span>
+                </footer>
+
+            </div>
+            <!-- End Right content here -->
+
+        </div>
+        <!-- END wrapper -->
+
+    </body>
+</html>

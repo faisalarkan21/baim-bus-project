@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body class="fixed-left">
+  <!-- Begin page -->
+  <div class="accountbg"></div>
+  <div class="wrapper-page">
+
+    <div class="card">
+      <div class="card-body">
+
+        <h3 class="text-center m-0">
+          <a href="index.html" class="logo logo-admin"><img src="../assets/images/logo.png" height="30" alt="logo"></a>
+        </h3>
+
+        <div class="p-3">
+          <h4 class="font-18 m-b-5 text-center">Welcome Back !</h4>
+          <p class="text-muted text-center">Sign in to continue to Admiria.</p>
+
+          <form class="user" id="formLogin" method="post">
+
+            <div class="form-group">
+              <label for="username">Email</label>
+              <input type="email" class="form-control form-control-user" id="username" name="username"  [(ngModel)]="email" 
+                aria-describedby="emailHelp" placeholder="Enter Email Address...">
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control form-control-user" id="password" name="password"  [(ngModel)]="password"
+                placeholder="Password">
+            </div>
+
+            <div class="form-group row m-t-20">
+              <button (click)="doLogin()" class="btn btn-primary btn-user btn-block">
+                Login
+              </button>
+            </div>
+
+            <div class="form-group m-t-10 mb-0 row">
+              <div class="col-12 m-t-20">
+                <a href="recover" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-t-40 text-center">
+      <p class="text-white">Don't have an account ? <a routerLink="/register"
+          class="font-500 font-14 text-white font-secondary"> Signup Now </a> </p>
+      <p class="text-white">©Copyright by Baim 2020. Crafted with <i class="mdi mdi-heart text-danger"></i> by
+        Themesbrand
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>

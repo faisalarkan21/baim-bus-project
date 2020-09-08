@@ -1,0 +1,96 @@
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Profile Details</h1>
+    <p class="mb-4">You Make IT</p>
+
+    <!--<editor-fold desc="Table Bus">-->
+    <form class="row" method="post" th:object="${profile}" id="updateProfile" action="#">
+        <!-- Pie Chart -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <img class="img-profile rounded-circle" src="../../../assets/images/logo_login.jpg" height="250px" width="250px" style="display: block; margin: auto;">
+                    </div>
+                    <div class="mt-4 text-center small">
+                        <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-primary"></i>
+                        </span>
+                            <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-success"></i>
+                        </span>
+                            <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-info"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <label for="firstName"><b>First Name</b></label>
+                        <input type="text" class="form-control form-control-user" id="firstName"
+                               name="user.firstName" aria-describedby="emailHelp" placeholder="Enter First Name"
+                               [(ngModel)]="user.firstName">
+                        <label for="lastName" style="margin-top:10px"><b>Last Name</b></label>
+                        <input type="text" class="form-control form-control-user" id="lastName"
+                               name="user.lastName" aria-describedby="emailHelp" placeholder="Enter Last Name"
+                               [(ngModel)]="user.lastName">
+                        <label for="user.mobileNumber" style="margin-top:10px"><b>Phone NO</b></label>
+                        <input type="text" class="form-control form-control-user" id="mobileNumber"
+                               name="user.mobileNumber" aria-describedby="emailHelp" placeholder="Enter Phone NO"
+                               [(ngModel)]="user.mobileNumber">
+                        <button href="submit" class="btn btn-primary btn-user btn-block" style="margin-top:30px">
+                            Update Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2">
+                        <label for="email" style="margin-top:10px"><b>Email</b></label>
+                        <input type="email" class="form-control form-control-user" id="email"
+                               name="user.email" aria-describedby="emailHelp" placeholder="Enter Email"
+                               [(ngModel)]="user.email">
+                        <label for="password" style="margin-top:10px"><b>Password</b></label>
+                        <input type="password" class="form-control form-control-user" id="password"
+                               aria-describedby="emailHelp" placeholder="Enter Password"
+                               [(ngModel)]="user.password">
+                        <button href="submit" class="btn btn-primary btn-user btn-block" style="margin-top:30px">
+                            Change Password
+                        </button>
+                    </div>
+                    <br/>
+                    <div class="mt-4 text-center small">
+                        <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-primary"></i>
+                        </span>
+                            <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-success"></i>
+                        </span>
+                            <span class="mr-2">
+                        <i class="mdi mdi-checkbox-blank-circle text-info"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--</editor-fold>-->
+</div>
+<!-- /.container-fluid -->

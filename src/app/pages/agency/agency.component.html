@@ -1,0 +1,59 @@
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <h1 class="h3 mb-2 text-gray-800">Agency Details</h1>
+            <p class="mb-4">Agency owned buses</p>
+
+            <!--<editor-fold desc="Table Bus">-->
+            <form class="row" th:object="${agency}" method="post" id="updateAgency" action="#">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="card shadow mb-4">
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-area">
+                                <label for="agencyName" style="margin-top:30px"><b>Agency Name</b></label>
+                                <input type="text" class="form-control form-control-user" id="agencyName"
+                                       name="agency.name" aria-describedby="emailHelp" placeholder="Enter Agency Name"
+                                      [(ngModel)]="agency.name">
+                                      <!-- [(ngModel)]="agencyName" -->
+                                <label for="agencyDetails" style="margin-top:30px"><b>Agency Detail</b></label>
+                                <input type="text" class="form-control form-control-user" id="agencyDetails"
+                                       name="agency.detail" aria-describedby="emailHelp" placeholder="Enter Agency Detail"
+                                       [(ngModel)]="agency.details">
+                                      <!-- [(ngModel)]="agencyDetail" -->
+                                <button (click)="updateAgency(agency.id)" class="btn btn-primary btn-user" style="margin-top:30px">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pie Chart -->
+                <div class="col-xl-4 col-lg-5">
+                    <div class="card shadow mb-4">
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+                                <img class="img-profile rounded-circle" src="../../../assets/images/logo_login.jpg" height="186px" width="186px" style="display: block; margin: auto;">
+                            </div>
+                            <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                <i class="mdi mdi-checkbox-blank-circle text-primary"></i>
+                                </span>
+                                    <span class="mr-2">
+                                <i class="mdi mdi-checkbox-blank-circle text-success"></i>
+                                </span>
+                                    <span class="mr-2">
+                                <i class="mdi mdi-checkbox-blank-circle text-info"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--</editor-fold>-->
+        </div>
+        <!-- /.container-fluid -->
+
