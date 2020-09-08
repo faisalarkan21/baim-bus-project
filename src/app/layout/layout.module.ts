@@ -10,7 +10,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { CommonModule } from '@angular/common';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -24,6 +24,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     FormsModule,
+    NgbModule,
     NgxDatatableModule,
     LayoutRoutingModule
   ],

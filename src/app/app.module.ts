@@ -9,6 +9,7 @@ import { LayoutModule } from './layout/layout.module';
 import { LoginModule } from './pageLogin/login.module';
 import { Page404Component } from './page404/page404.component';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
+    NgbModule,
     BrowserModule,
     LoginModule,
     AppRoutingModule,

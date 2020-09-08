@@ -51,10 +51,25 @@ export class ApiService {
   postUpdateTrips(body) {
     return this.http.post(`http://localhost:8080/api/updateTripsAngular`, body);
   }
+
+  postDeleteTrips(id) {
+    return this.http.post(`http://localhost:8080/api/deleteTrips-angular`, id);
+  }
+  
+  postDeleteBus(id) {
+    return this.http.post(`http://localhost:8080/api/deleteBus-angular`, id);
+  }
   
   
   getTripId(id){
     return this.http.get(`${this.BASE_URL}/getAllTrips-angular?id=${id}`)
+  }
+
+  postAddBuses(body) {
+    return this.http.post(`http://localhost:8080/api/addBus-angular`, body);
+  }
+  postAddTrip(body) {
+    return this.http.post(`http://localhost:8080/api/addTrips-angular`, body);
   }
 
 
